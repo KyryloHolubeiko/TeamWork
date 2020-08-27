@@ -5,18 +5,22 @@ using namespace std;
 
 class Hamster
 {
+	string name;
+	int age;
+	string age;
+	int weight;
 public:
-	MyClass();
-	~MyClass();
+	Hamster();
+	~Hamster();
 
 private:
 
 };
 
-MyClass::MyClass()
+Hamster::Hamster()
 {
 }
 
-MyClass::~MyClass()
+Hamster::~Hamster()
 {
 }
