@@ -3,9 +3,6 @@
 
 using namespace std;
 
-class Dog {
-	string name;
-	string type;
 class Hamster
 {
 	string name;
@@ -13,17 +10,32 @@ class Hamster
 	string sex;
 	int weight;
 public:
-	MyClass();
-	~MyClass();
-
-private:
+	Hamster();
+	~Hamster();
+	void Sound()const {
+		cout << "PI PI PI PI \n";
+	}
+	void ShowName()const {
+		cout << " Name: " << name << endl;
+	}
+	void GetType()const {
+		cout << "Type: " << "rodent \n";
+	}
+	void ShowInfo()const {
+		ShowName();
+		cout << "Age: " << age << endl;
+		cout << "Sex: " << sex << endl;
+		cout << "Weight: " << weight << endl;
+	}
 
 };
 
-MyClass::MyClass()
+Hamster::Hamster()
 {
-}
+	name = "Hamchi";
+	age = 0;
+	sex = "male";
+	weight = 0;
 
-MyClass::~MyClass()
-{
 }
+Hamster::~Hamster() {}
