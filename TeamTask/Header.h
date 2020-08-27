@@ -16,7 +16,7 @@ class Cat {
 private:
 	int age;
 	string name;
-	float weigh;
+	float weight;
 	string sound;
 	string type;
 public:
@@ -24,7 +24,7 @@ public:
 		const char* _type = "wild", const char* _sound = "Myr-myr") {
 		age = _age;
 		name = _name;
-		weigh = _weight;
+		weight = _weight;
 		sound = _sound;
 		type = _type;
 	}
