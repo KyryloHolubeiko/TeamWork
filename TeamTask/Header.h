@@ -44,6 +44,5 @@ public:
 			"\nweigh: " << weight <<
 			"\ntype: " << type <<
 			"\nsound: " << sound << endl;
-
 	}
 };
