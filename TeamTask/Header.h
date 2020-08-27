@@ -48,24 +48,39 @@ public:
 	}
 };
 
-class Dog {
+class Hamster
+{
 	string name;
-	string type;
+	int age;
+	string sex;
+	int weight;
 public:
-	Dog(string name, string type) { this->name = name; this->type = type; }
+	Hamster();
+	~Hamster();
+	void Sound()const {
+		cout << "PI PI PI PI \n";
+	}
+	void ShowName()const {
+		cout << " Name: " << name << endl;
+	}
+	void GetType()const {
+		cout << "Type: " << "rodent \n";
+	}
+	void ShowInfo()const {
+		ShowName();
+		cout << "Age: " << age << endl;
+		cout << "Sex: " << sex << endl;
+		cout << "Weight: " << weight << endl;
+	}
 
-	void Sound() {
-		cout << "GAV  GAV" << endl;
-	}
-	void Show() {
-		cout << "Name" << name << endl;
-	}
-
-	void Type() {
-		cout << "Type" << type << endl;
-	}
-
-	void Info() {
-		cout << "Name: " << name << endl << "Age: 10" << endl << "Sex: male" << endl << "10kg" << endl;
-	}
 };
+
+Hamster::Hamster()
+{
+	name = "Hamchi";
+	age = 0;
+	sex = "male";
+	weight = 0;
+
+}
+Hamster::~Hamster() {}
