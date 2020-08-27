@@ -10,7 +10,7 @@ public:
 	Dog(string name, string type) { this->name = name; this->type = type; }
 
 	void Sound() {
-		cout << "GAV GAV" << endl;
+		cout << "GAV  GAV" << endl;
 	}
 	void Show() {
 		cout << "Name" << name << endl;
