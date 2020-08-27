@@ -7,7 +7,6 @@ void main() {
 	D.Show();
 	D.Type();
 	D.Info();
-}
 
 	Cat c;
 	c.Sound();
